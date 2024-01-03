@@ -4,8 +4,224 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./tailwind.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
+      rel="stylesheet"
+    />
     <title>VGS Maquetacion</title>
   </head>
 
-  <body></body>
+  <body>
+    <!-- Cabecera -->
+    <!-- <div class="relative">
+      <img src="/img/cabecera.jpg" />
+      <div class="absolute top-1 left-2/3 text-center">
+        <p class="font-semibold font-nunito text-sm text-white">
+          973 19 65 36 · eme@emesl.com
+        </p>
+      </div>
+    </div> -->
+    <!-- /Cabecera con imagen -->
+    <header class="bg-black px-6 shadow">
+      <div class="flex justify-between">
+        <div class="flex items-center">
+          <a href="#">
+            <img src="/logos/emesl.png" />
+          </a>
+          <div class="font-semibold font-nunito text-base text-white space-x-6">
+            <a href="#" class="px-3 py-2">EMPRESA</a>
+            <a href="#" class="px-3 py-2">SERVICIOS</a>
+            <a href="#" class="px-3 py-2">PROYECTOS</a>
+            <a href="#" class="px-3 py-2">ACTUALIDAD</a>
+            <a href="#" class="px-3 py-2">CONTACTO</a>
+          </div>
+        </div>
+      </div>
+      <!-- Menu que se verá cuando sea navegacion movil-->
+      <div class="space-y-1 pb-3 border-t py-3 pt-2 md:hidden"></div>
+    </header>
+    <!-- /Cabecera con imagen -->
+    <main>
+      <!-- Iconos de servicios -->
+      <article class="py-12 px-32">
+        <div class="text-center">
+          <h1 class="font-bold font-nunito text-3xl text-blue-400">
+            Nuestros servicios
+          </h1>
+          <p class="font-nunito text-2xl text-black">
+            Lorem ipsum dolor sit amet consectetur
+          </p>
+        </div>
+        <div class="flex px-10 py-10 space-x-20">
+          <div class="text-center">
+            <img class="mx-auto w-20 h-20" src="/icons/energia.svg" />
+            <h1 class="font-bold font-nunito text-xl text-black pt-6">
+              Energía
+            </h1>
+            <p class="font-nunito text-base text-black">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img class="mx-auto w-20 h-20" src="/icons/renovables.svg" />
+            <h1 class="font-bold font-nunito text-xl text-black pt-6">
+              Renovables
+            </h1>
+            <p class="font-nunito text-base text-black">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img class="mx-auto w-20 h-20" src="/icons/mantenimientos.svg" />
+            <h1 class="font-bold font-nunito text-xl text-black pt-6">
+              Mantenimientos
+            </h1>
+            <p class="font-nunito text-base text-black">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img
+              class="mx-auto w-20 h-20"
+              src="/icons/telecomunicaciones.svg"
+            />
+            <h1 class="font-bold font-nunito text-xl text-black pt-6">
+              Telecomunicaciones
+            </h1>
+            <p class="font-nunito text-base text-black">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img class="mx-auto w-20 h-20" src="/icons/ingenieria.svg" />
+            <h1 class="font-bold font-nunito text-xl text-black pt-6">
+              Ingeniería
+            </h1>
+            <p class="font-nunito text-base text-black">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+        </div>
+      </article>
+      <!-- /Iconos de servicios -->
+      <!-- Banner de contacto -->
+      <article>
+        <img src="/img/banner_contacto.jpg" />
+      </article>
+      <!-- /Banner de contacto -->
+      <!-- Nuestros clientes -->
+      <article class="py-12 px-32 bg-slate-100">
+        <div class="text-center">
+          <h1 class="font-bold font-nunito text-3xl text-blue-400">
+            Nuestros clientes
+          </h1>
+          <p class="font-nunito text-2xl text-black">
+            Algunos de los clientes con los que hemos colaborado
+          </p>
+        </div>
+        <div class="flex items-center px-10 py-10">
+          <img class="mx-auto" src="/logos/copisa.png" />
+          <img class="mx-auto" src="/logos/ayuntamiento_lleida.png" />
+          <img class="mx-auto" src="/logos/sorigue.png" />
+          <img class="mx-auto" src="/logos/rogasa.png" />
+          <img class="mx-auto" src="/logos/incasol.png" />
+        </div>
+      </article>
+      <!-- /Nuestros clientes -->
+      <!-- Ultimas noticias -->
+      <article class="py-12 px-32">
+        <div class="text-center">
+          <h1 class="font-bold font-nunito text-3xl text-blue-400">
+            Ultimas noticias de nuestro blog
+          </h1>
+          <p class="font-nunito text-2xl text-black">
+            Lorem ipsum dolor sit amet consectetur dolor sit
+          </p>
+        </div>
+
+        <div class="flex pt-10 space-x-5">
+          <div class="max-w-sm rounded-xl overflow-hidden shadow-lg">
+            <img class="w-full" src="/img/01_noticia.jpg" />
+            <div class="px-6 py-4">
+              <div class="font-nunito font-bold text-xl mb-2">
+                Texto noticia una línea
+              </div>
+              <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block text-base font-nunito font-bold text-blue-600 mr-2 mb-2"
+              >
+                Leer más >
+              </span>
+            </div>
+          </div>
+
+          <div class="max-w-sm rounded-xl overflow-hidden shadow-lg">
+            <img class="w-full" src="/img/02_noticia.jpg" />
+            <div class="px-6 py-4">
+              <div class="font-nunito font-bold text-xl mb-2">
+                Texto noticia una línea
+              </div>
+              <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block text-base font-nunito font-bold text-blue-600 mr-2 mb-2"
+              >
+                Leer más >
+              </span>
+            </div>
+          </div>
+
+          <div class="max-w-sm rounded-xl overflow-hidden shadow-lg">
+            <img class="w-full" src="/img/03_noticia.jpg" />
+            <div class="px-6 py-4">
+              <div class="font-nunito font-bold text-xl mb-2">
+                Texto noticia una línea
+              </div>
+              <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block text-base font-nunito font-bold text-blue-600 mr-2 mb-2"
+              >
+                Leer más >
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center py-16">
+          <button
+            class="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-bold font-nunito text-xl py-2 px-4 rounded-full"
+          >
+            Visita nuestro blog
+          </button>
+        </div>
+      </article>
+      <!-- /Ultimas noticias -->
+    </main>
+    <!-- Cabecera -->
+  </body>
 </html>
