@@ -22,7 +22,7 @@
       </div>
     </div> -->
     <!-- /Cabecera con imagen -->
-    <header class="bg-black px-6 shadow">
+    <!-- <header class="bg-black px-6 shadow">
       <div class="flex justify-between">
         <div class="flex items-center">
           <a href="#">
@@ -36,9 +36,29 @@
             <a href="#" class="px-3 py-2">CONTACTO</a>
           </div>
         </div>
+      </div> -->
+    <!-- Menu que se verá cuando sea navegacion movil-->
+    <!-- <div class="space-y-1 pb-3 border-t py-3 pt-2 md:hidden"></div> -->
+    <header class="relative text-white font-nunito">
+      <img src="/img/cabecera.jpg" class="w-full" />
+      <p class="absolute top-1 left-2/3 mb-4 text-center text-sm font-semibold">
+        973 19 65 36 · eme@emesl.com
+      </p>
+      <hr class="absolute w-full top-7" />
+      <div class="absolute top-20 left-56 grid grid-cols-2">
+        <img src="/logos/emesl.png" />
+        <div class="font-semibold text-base flex items-center">
+          <a href="#" class="px-3 py-2">EMPRESA</a>
+          <a href="#" class="px-3 py-2">SERVICIOS</a>
+          <a href="#" class="px-3 py-2">PROYECTOS</a>
+          <a href="#" class="px-3 py-2">ACTUALIDAD</a>
+          <a href="#" class="px-3 py-2">CONTACTO</a>
+        </div>
       </div>
-      <!-- Menu que se verá cuando sea navegacion movil-->
-      <div class="space-y-1 pb-3 border-t py-3 pt-2 md:hidden"></div>
+      <div class="absolute bottom-20 left-56">
+        <p class="text-5xl font-bold">Estudios y Montajes Eléctricos S.L.</p>
+        <p class="text-4xl pt-3">Lorem ipsum dolor sit amet consectetur</p>
+      </div>
     </header>
     <!-- /Cabecera con imagen -->
     <main>
@@ -114,8 +134,23 @@
       </article>
       <!-- /Iconos de servicios -->
       <!-- Banner de contacto -->
-      <article>
-        <img src="/img/banner_contacto.jpg" />
+      <article class="relative">
+        <img src="/img/banner_contacto.jpg" class="w-full" />
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white font-nunito"
+        >
+          <h1 class="text-2xl font-bold">
+            Empresa líder en el sector eléctrico
+          </h1>
+          <p class="text-xl">
+            Instalaciones y mantenimientos principalmente del sector eléctrico
+          </p>
+          <button
+            class="mt-10 px-4 py-2 border bg-blue-400 font-bold text-xl rounded-full"
+          >
+            Contacta ahora
+          </button>
+        </div>
       </article>
       <!-- /Banner de contacto -->
       <!-- Nuestros clientes -->
@@ -222,6 +257,61 @@
       </article>
       <!-- /Ultimas noticias -->
     </main>
-    <!-- Cabecera -->
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer>
+      <section
+        class="bg-slate-800 space-y-4 py-16 px-36 grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2"
+      >
+        <!-- Columna 1 -->
+        <div class="mx-auto pt-5">
+          <img src="/logos/emesl.png" />
+          <div class="text-white font-nunito text-base pt-10">
+            <p>Ctra. La Seu d'Urgell C-13, km.9,5</p>
+            <p>25660 - Alcoletge, Lleida (España)</p>
+            <u>Cómo llegar</u>
+          </div>
+        </div>
+        <!-- Columna 2 -->
+        <div class="mx-auto">
+          <div class="text-white font-nunito text-base pb-3">
+            <h2 class="font-bold">CONTACTO</h2>
+            <p class="pt-4 pb-2">973 19 65 36</p>
+            <p>eme@emesl.com</p>
+          </div>
+          <div class="flex space-x-5 w-5 h-5">
+            <img src="/logos/linkedin.svg" />
+            <img src="/logos/instagram.svg" />
+          </div>
+        </div>
+        <!-- Columna 3 -->
+        <div class="mx-auto">
+          <h2 class="text-white font-nunito text-base font-bold">
+            CERTIFICADOS
+          </h2>
+          <img src="/logos/sellos.png" class="pt-5" />
+        </div>
+
+        <!-- Columna 4 -->
+        <div class="mx-auto">
+          <div class="text-white font-nunito text-base">
+            <h2 class="font-bold">INFORMACIÓN LEGAL</h2>
+            <ul class="list-none pt-3 space-y-2">
+              <li>Aviso legal</li>
+              <li>Política de privacidad</li>
+              <li>Política de cookies</li>
+              <li>Política de calidad</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="bg-blue-600 text-center py-2">
+        <p class="text-xs font-nunito text-white">
+          © Estudios y Montajes Eléctricos S.L. 2021 - Todos los derechos
+          reservados
+        </p>
+      </section>
+    </footer>
+    <!-- /Footer -->
   </body>
 </html>
