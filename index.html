@@ -13,39 +13,13 @@
 
   <body>
     <!-- Cabecera -->
-    <!-- <div class="relative">
-      <img src="/img/cabecera.jpg" />
-      <div class="absolute top-1 left-2/3 text-center">
-        <p class="font-semibold font-nunito text-sm text-white">
-          973 19 65 36 · eme@emesl.com
-        </p>
-      </div>
-    </div> -->
-    <!-- /Cabecera con imagen -->
-    <!-- <header class="bg-black px-6 shadow">
-      <div class="flex justify-between">
-        <div class="flex items-center">
-          <a href="#">
-            <img src="/logos/emesl.png" />
-          </a>
-          <div class="font-semibold font-nunito text-base text-white space-x-6">
-            <a href="#" class="px-3 py-2">EMPRESA</a>
-            <a href="#" class="px-3 py-2">SERVICIOS</a>
-            <a href="#" class="px-3 py-2">PROYECTOS</a>
-            <a href="#" class="px-3 py-2">ACTUALIDAD</a>
-            <a href="#" class="px-3 py-2">CONTACTO</a>
-          </div>
-        </div>
-      </div> -->
-    <!-- Menu que se verá cuando sea navegacion movil-->
-    <!-- <div class="space-y-1 pb-3 border-t py-3 pt-2 md:hidden"></div> -->
     <header class="relative text-white font-nunito">
       <img src="/img/cabecera.jpg" class="w-full" />
       <p class="absolute top-1 left-2/3 mb-4 text-center text-sm font-semibold">
         973 19 65 36 · eme@emesl.com
       </p>
       <hr class="absolute w-full top-7" />
-      <div class="absolute top-20 left-56 grid grid-cols-2">
+      <div class="absolute top-20 left-56 grid grid-cols-2 gap-44">
         <img src="/logos/emesl.png" />
         <div class="font-semibold text-base flex items-center">
           <a href="#" class="px-3 py-2">EMPRESA</a>
@@ -72,7 +46,9 @@
             Lorem ipsum dolor sit amet consectetur
           </p>
         </div>
-        <div class="flex px-10 py-10 space-x-20">
+        <div
+          class="px-10 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5"
+        >
           <div class="text-center">
             <img class="mx-auto w-20 h-20" src="/icons/energia.svg" />
             <h1 class="font-bold font-nunito text-xl text-black pt-6">
@@ -135,26 +111,31 @@
       <!-- /Iconos de servicios -->
       <!-- Banner de contacto -->
       <article class="relative">
-        <img src="/img/banner_contacto.jpg" class="w-full" />
+        <!-- <img src="/img/banner_contacto.jpg" class="w-full" /> -->
         <div
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white font-nunito"
+          class="bg-cover bg-center h-96"
+          style="background-image: url(&quot;/img/banner_contacto.jpg&quot;)"
         >
-          <h1 class="text-2xl font-bold">
-            Empresa líder en el sector eléctrico
-          </h1>
-          <p class="text-xl">
-            Instalaciones y mantenimientos principalmente del sector eléctrico
-          </p>
-          <button
-            class="mt-10 px-4 py-2 border bg-blue-400 font-bold text-xl rounded-full"
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white font-nunito"
           >
-            Contacta ahora
-          </button>
+            <h1 class="text-2xl font-bold">
+              Empresa líder en el sector eléctrico
+            </h1>
+            <p class="text-xl">
+              Instalaciones y mantenimientos principalmente del sector eléctrico
+            </p>
+            <button
+              class="mt-10 px-4 py-2 border bg-blue-400 font-bold text-xl rounded-full"
+            >
+              Contacta ahora
+            </button>
+          </div>
         </div>
       </article>
       <!-- /Banner de contacto -->
       <!-- Nuestros clientes -->
-      <article class="py-12 px-32 bg-slate-100">
+      <article class="py-16 px-32 bg-slate-100">
         <div class="text-center">
           <h1 class="font-bold font-nunito text-3xl text-blue-400">
             Nuestros clientes
@@ -163,7 +144,9 @@
             Algunos de los clientes con los que hemos colaborado
           </p>
         </div>
-        <div class="flex items-center px-10 py-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 items-center px-10 py-10 space-y-2"
+        >
           <img class="mx-auto" src="/logos/copisa.png" />
           <img class="mx-auto" src="/logos/ayuntamiento_lleida.png" />
           <img class="mx-auto" src="/logos/sorigue.png" />
@@ -183,8 +166,10 @@
           </p>
         </div>
 
-        <div class="flex pt-10 space-x-5">
-          <div class="max-w-sm rounded-xl overflow-hidden shadow-lg">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 justify-center gap-4 items-center pt-10"
+        >
+          <div class="rounded-xl overflow-hidden shadow-lg">
             <img class="w-full" src="/img/01_noticia.jpg" />
             <div class="px-6 py-4">
               <div class="font-nunito font-bold text-xl mb-2">
@@ -205,7 +190,7 @@
             </div>
           </div>
 
-          <div class="max-w-sm rounded-xl overflow-hidden shadow-lg">
+          <div class="rounded-xl overflow-hidden shadow-lg">
             <img class="w-full" src="/img/02_noticia.jpg" />
             <div class="px-6 py-4">
               <div class="font-nunito font-bold text-xl mb-2">
@@ -226,7 +211,7 @@
             </div>
           </div>
 
-          <div class="max-w-sm rounded-xl overflow-hidden shadow-lg">
+          <div class="rounded-xl overflow-hidden shadow-lg">
             <img class="w-full" src="/img/03_noticia.jpg" />
             <div class="px-6 py-4">
               <div class="font-nunito font-bold text-xl mb-2">
