@@ -14,24 +14,53 @@
   <body>
     <!-- Cabecera -->
     <header class="relative text-white font-nunito">
-      <img src="/img/cabecera.jpg" class="w-full" />
-      <p class="absolute top-1 left-2/3 mb-4 text-center text-sm font-semibold">
-        973 19 65 36 · eme@emesl.com
-      </p>
-      <hr class="absolute w-full top-7" />
-      <div class="absolute top-20 left-56 grid grid-cols-2 gap-44">
-        <img src="/logos/emesl.png" />
-        <div class="font-semibold text-base flex items-center">
-          <a href="#" class="px-3 py-2">EMPRESA</a>
-          <a href="#" class="px-3 py-2">SERVICIOS</a>
-          <a href="#" class="px-3 py-2">PROYECTOS</a>
-          <a href="#" class="px-3 py-2">ACTUALIDAD</a>
-          <a href="#" class="px-3 py-2">CONTACTO</a>
+      <div
+        class="bg-cover bg-center h-96"
+        style="background-image: url(&quot;/img/cabecera.jpg&quot;)"
+      >
+        <p
+          class="absolute top-1 left-1/2 md:left-2/3 mb-4 text-center text-xs md:text-sm font-semibold"
+        >
+          973 19 65 36 · eme@emesl.com
+        </p>
+        <hr class="absolute w-full top-7" />
+        <!-- Navegación en pantallas pequeñas -->
+        <div class="lg:hidden absolute top-20 grid grid-cols-2 gap-36 w-full">
+          <img src="/logos/emesl.png" class="ml-10"/>
+          <button class="ml-20">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-10 h-10"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
         </div>
-      </div>
-      <div class="absolute bottom-20 left-56">
-        <p class="text-5xl font-bold">Estudios y Montajes Eléctricos S.L.</p>
-        <p class="text-4xl pt-3">Lorem ipsum dolor sit amet consectetur</p>
+        <!-- /Navegación en pantallas pequeñas -->
+        <!-- Navegación en pantallas grandes -->
+        <div class="hidden lg:absolute lg:top-20 lg:left-56 lg:grid lg:grid-cols-2 lg:gap-44">
+          <img src="/logos/emesl.png" />
+          <div class="font-semibold text-base flex items-center">
+            <a href="#" class="px-3 py-2">EMPRESA</a>
+            <a href="#" class="px-3 py-2">SERVICIOS</a>
+            <a href="#" class="px-3 py-2">PROYECTOS</a>
+            <a href="#" class="px-3 py-2">ACTUALIDAD</a>
+            <a href="#" class="px-3 py-2">CONTACTO</a>
+          </div>
+        </div>
+        <!-- /Navegación en pantallas grandes -->
+        <div class="absolute bottom-20 left-10 md:left-36 lg:left-56">
+          <p class="text-lg sm:text-xl md:text-3xl lg:text-5xl font-bold">Estudios y Montajes Eléctricos S.L.</p>
+          <p class="text-base sm:text-md md:text-xl lg:text-4xl pt-3">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
       </div>
     </header>
     <!-- /Cabecera con imagen -->
